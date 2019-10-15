@@ -309,7 +309,7 @@
     // `zh-hans-tw`, `zh-hans`, `zh`
     // locales.
     locales.forEach(function(locale) {
-      var localeParts = locale.split("-");
+      var localeParts = String(locale).split("-");
       var firstFallback = null;
       var secondFallback = null;
       if (localeParts.length === 3) {
